@@ -1,312 +1,669 @@
-header {
-    display: flex;
-    justify-content: center;
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(./Fonts/SourceSansPro-Regular.otf);
 }
 
-header div:first-child {
-    position: absolute;
-    display: flex;
-    width: 1103px;
-    height: 55.46px;
-    padding: 25px;
+@font-face {
+    font-family: Source Sans Pro-Black;
+    src: url(./fonts/SourceSansPro-Black.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-SemiBold;
+    src: url(./fonts/SourceSansPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-Bold;
+    src: url(./fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro_Lightit;
+    src: url(./fonts/SourceSansPro-LightIt.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-Light;
+    src: url(./fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+    font-family: spincycle_ot;
+    src: url(./fonts/spincycle_ot.otf)
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+body,
+body * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.school-page {
+
+    overflow-x: hidden;
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
     margin: auto;
-    justify-content: space-between;
+    flex-shrink: 0;
+
+
+    width: 100%;
+    height: 100%;
+    top: -0px;
+    left: -0px;
 }
 
-#headerStuff {
-    width: 234px;
-    height: 15px;
+span {
+        color: #C271FF;
+}
+
+.main-part {
+
+    margin:auto;
+}
+
+
+.header {
+
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
-#headerStuff a {
+.headerlogo {
+
+    width: 180px;
+    height: 35px;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-left: 200px;
+}
+
+.links {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 150px 0px 400px;
+}
+
+.links a {
+
+    color: #ffffff;
+    text-align: left;
+    font: 700 12px "Source Sans Pro", sans-serif;
+    margin: 10px 30px 10px 30px;
+    line-height: normal;
+    font-style: normal;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 15px;
-    color: white;
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
-body.background-main{
-    margin: 0%;
+
+.banner-section {
+
+    display: flex;
+    flex-direction: column;
 }
 
-.banner {
-    background-image: url(images/background.png);
-    padding: 20px;
-    margin: 0;
-}
+.banner-block1 {
 
-#Getschooled {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*position: absolute;*/
-    top: 215px;
 }
 
-#Getschooled h1 {
+.banner-block1 h1 {
+
+    align-content: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro-Bold;
     font-size: 120px;
-    margin-bottom: 10px;
-    color: white;
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 40px 10px 0px 80px;
+    margin: 60px 0 0 0;
 }
 
-#Getschooled p {
-    margin-top: 5px;
-    width: 300px;
-    height: 50px;
-    margin-left: 30px;
-    word-spacing: 60px;
-    margin-bottom: 1px;
-    font-weight: bold;
-    color: white;
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+
+.banner-block1 p {
+
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px 95px;
 }
 
-#Getschooled button {
-    border-radius: 30px;
-    background-color: rgb(160, 72, 242);
-    color: white;
-    padding: 15px 30px;
-    font-size: 15px;
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    border-style: none;
-    margin-top: 30px;
-    margin-left: 30px;
-}
+.banner-block1 span {
 
-#pros {
-    color: white;
+    color: #ffffff;
     text-align: center;
-    margin-top: 200px;
-    font-family: "Helvetica";
-    font-weight: lighter;
-    font-size: 23px;
-    margin-left: 50px;
-}
-#pros .highlighted-word {
-    color:rgb(181, 117, 241);
+    font: 600 14px "Source Sans Pro-Light", sans-serif;
+    margin: 0 30px 0 25px;
+    line-height: normal;
 }
 
-#persons-container {
-    display:flex;
+.banner-button {
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 15px;
+    align-content: center;
+    justify-content: center;
+    margin: 40px 0 10px 0px;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    border-radius: 60px;
+    text-transform: uppercase;
+    background: #C271FF;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+}
+
+.banner-block2 span {
+    font-family: "Source Sans Pro-Bold";
+}
+
+.banner-block2 {
+
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
+
 }
 
-.persons {
+.banner-block2 h1 {
+
+    align-items: center;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 40px;
+    letter-spacing: 0px;
     text-align: center;
-    margin: 10px;
-    margin-top: 100px;
+    font-family: "Source Sans Pro-Light";
+    font-style: normal;
+    margin-top: 180px;
+    padding-top: 40px;
 }
 
-#persons-container h3 {
-    color: white;
-    margin-bottom: 10px;
+.banner-block2-people {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 20px 0px 20px;
 }
 
-#persons-container p {
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.banner-person {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 0px 50px;
+    padding-top: 15px;
+}
+
+.banner-person > h3 {
+
+    color: #FFF; 
+    text-align: center;
+    font-family: "Source Sans Pro-Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 5px auto 5px auto;
+}
+
+.banner-person > p {
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Source Sans Pro-LightIt";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
     font-style: italic;
+    margin: auto;
+    padding-bottom: 80px;
 }
+
+
+.quote-section {
+
+
+
+    display: flex;
+
+    margin: 22px 0 10px 0;
+    width: auto;
+    height: auto;
+    background-color: #C271FF;
+
+}
+
+.quote-block {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:80px 40px 100px 160px;
+
+}
+
+.quote-person {
+
+    float: left;
+    flex-shrink: 0;
+    margin:10px;
+    height: 160px;
+    width: 160px;
+}
+
 .quote {
-    overflow: hidden;
-    background-color: rgb(180, 121, 235);
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.6px;
+    margin: 0px 90px 10px 0px;
+}
+
+.quote > p {
+    font-family: "Source Sans Pro-Semibold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.quote p, cite {
+    margin: 2px 0 2px 40px;
+}
+
+
+.video-section {
+
+    margin: 40px 140px 20px 100px;
+}
+
+.video-section h1 {
+
+    color: #071629;
     text-align: center;
-    margin: 0;
-    padding: 70px;
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
-#quoteid {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-right: 100px;
-    color: white;
+.video-section span{
+    color: #C271FF;
+    font-family: Source Sans Pro-Bold;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-#avatar {
-    margin-left: 200px; 
-    margin-top: 20px;
-}
+.video-block {
 
-blockquote {
-    margin: 0;
-    text-align: left;
-}
-
-p {
-    margin: 0;
-    text-align: left;
-    margin-top: 10px;
-}
-
-#quoteid p:first-child {
-    margin-bottom: 100px;
-}
-#video-container {
     display: flex;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 100px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
-#video-container > div {
-    margin-right: 30px; 
+.video {
+
+    text-align: center;
+    margin: 40px 20px 60px 10px;
 }
-  
+
+.play-video {
+    position: relative;
+}
+
+.vid {
+
+    width: 100%;
+    height: auto;
+}
+
+.play {
    
-#popular h1 {
-    display: flex;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    color: black;
-    justify-content: center;
-    margin-top: 100px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 95%;
 }
 
-#purple-word {
-    color:rgb(181, 117, 241);
-    word-spacing: 5px;
+.video h2 {
 
-}
-
-.block_autor {
-    display: flex;
-    align-items: center; 
-}
-
-.block_autor img {
-    margin-right: 10px; 
-}
-
-.block_autor h3 {
-    color: rgb(181, 117, 241);
-    font-family: "Assistant", Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-}
-
-.rating img {
-    margin-right: 10px;
-}
-
-.rating p {
-    margin-top: -5px;
-    color: rgb(181, 117, 241) !important;
-
-}
-
-.video-section p {
-    color: gray;
-    /*font-family: "Assistant", Helvetica, sans-serif;*/
-    font-style: italic;
-}
-
-.membership {
-    background-color: #071629;
-    padding-top: 50px;
-}
-
-.membership h1 {
-    display: flex;
-    justify-content: center;
-    font-family: "Assistant", Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.membership-container {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 100px;
-}
-
-.membership-container > div {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.membership-container img {
-    margin: 0 auto;
-}
-
-.button {
-    margin-top: 20px;
-}
-
-.membership-container p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-
-} 
-
-.membership-container h2 {
-        color: white;
-}
-
-.membership .button {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 50px;
-    
-}
-
-.membership .button button {
-    border-radius: 30px;
-    background-color: rgb(160, 72, 242);
-    color: white;
-    padding: 15px 30px;
-    font-size: 15px;
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    border-style: none;
-    margin-top: 1px;
-    margin-left: 30px;
-}
-
-.FAQ {
-    text-align: center;
-    background-color: #f8f8f8;
-    padding: 50px 0;
-}
-
-.FAQ h1 {
-    margin-bottom: 30px;
-}
-
-.row_block {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-.item_block {
-    width: 31%;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-
-.item_block h2 {
-    color: #333;
-    font-size: 22px;
-}
-
-.item_block p {
-    color: #666;
+    margin: 10px 20px 0px 0px;
+    text-align: left;
+    color: #071629;
+    font-family: Source Sans Pro;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: left;
+}
+
+.video p {
+
+    color: rgba(7, 22, 41, 0.50);
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    justify-content: left;
+}
+
+.video-info h3 {
+
+    color: #C271FF;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    padding-top: 10px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.video-info img {
+
+    float:left;
+    height:40px;
+    width: 40px;
+}
+
+.video-rating p {
+
+    color: #C271FF;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.stars {
+    float: left;
+    margin:2px;
+    padding: 1px;
+}
+
+.stars img{
+
+    height: 10px;
+    width: 10px;
+    margin-top: 4px;
+}
+
+
+.membership-section{
+
+    background-color: #071629;
+    color: #ffffff;
+    height:500px;
+}
+
+.membership-section h1 {
+
+    color: #FFF;
+    font-family: Source Sans Pro-Light;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding-top: 60px;    
+}
+
+.membership-section span {
+
+    color: #C271FF;
+    text-align: center;
+    font-family: Source Sans Pro-Bold;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.membership-block {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 40px 60px 40px;
+}
+
+.membership-block  div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.membership-section button {
+
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 15px;
+    align-content: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: auto;
+    padding: 1em 1.5em 1em 1.5em;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    background: #C271FF;
+
+}
+
+.review-block > img{
+
+    width: 43.666px;
+    height: 35.353px;
+    flex-shrink: 0;
+    display:flex;
+    justify-content: center;
+}
+
+
+.review-block > h2 {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+
+}
+
+
+.review-block > p {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+
+.faqs-section {
+    align-items: center;
+justify-content: center;
+}
+
+.faqs-section>h1 {
+
+    font-family: Source Sans Pro-Light;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.faqs-block {
+
+    justify-content: center;
+    margin: 50px 200px 0 250px;
+
+}
+
+.row-block {
+
+    margin-bottom: 25px;
+}
+
+.item-block {
+    padding: 0 5px 0 5px;
+    margin: 0 5px 0 5px;
+    justify-content: center;
+}
+
+.item-block h2 {
+
+    color: #071629;
+    font-family: Source Sans Pro-Bold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 30px 10px 30px;
+}
+
+.item-block p {
+
+    color: rgba(7, 22, 41, 0.50);
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 30px 10px 30px;
+}
+
+
+.footer {
+
+    background-color: #071629;
+    color: #FFF;
+    height: 290px;
+}
+
+.global-block {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+        height: auto;
+}
+
+.global-block p {
+
+}
+
+.social-icons {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    margin: 120px 80px 40px 0;
+}
+
+.instagram {
+    height: 30px;
+    width: 30px;
+
+}
+
+.twitter {
+    height: 30px;
+    width: 30px;
+
+}
+
+.facebook {
+    height: 30px;
+    width: 30px;
+}
+
+.row-block {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.logo2 {
+
+
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 35px;
+    padding: 20px;
+    margin: 100px 80px 0px 140px;
+}
+
+.smileschool {
+
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 30.517%;
+    margin-top: 40px;
 }

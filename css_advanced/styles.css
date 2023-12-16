@@ -1,0 +1,312 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header div:first-child {
+    position: absolute;
+    display: flex;
+    width: 1103px;
+    height: 55.46px;
+    padding: 25px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#headerStuff {
+    width: 234px;
+    height: 15px;
+    display: flex;
+
+}
+
+#headerStuff a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 15px;
+    color: white;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+body.background-main{
+    margin: 0%;
+}
+
+.banner {
+    background-image: url(images/background.png);
+    padding: 20px;
+    margin: 0;
+}
+
+#Getschooled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*position: absolute;*/
+    top: 215px;
+}
+
+#Getschooled h1 {
+    font-size: 120px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+#Getschooled p {
+    margin-top: 5px;
+    width: 300px;
+    height: 50px;
+    margin-left: 30px;
+    word-spacing: 60px;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: white;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+#Getschooled button {
+    border-radius: 30px;
+    background-color: rgb(160, 72, 242);
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    border-style: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#pros {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-family: "Helvetica";
+    font-weight: lighter;
+    font-size: 23px;
+    margin-left: 50px;
+}
+#pros .highlighted-word {
+    color:rgb(181, 117, 241);
+}
+
+#persons-container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.persons {
+    text-align: center;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+#persons-container h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#persons-container p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.quote {
+    overflow: hidden;
+    background-color: rgb(180, 121, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 70px;
+}
+
+#quoteid {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-right: 100px;
+    color: white;
+}
+
+#avatar {
+    margin-left: 200px; 
+    margin-top: 20px;
+}
+
+blockquote {
+    margin: 0;
+    text-align: left;
+}
+
+p {
+    margin: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#quoteid p:first-child {
+    margin-bottom: 100px;
+}
+#video-container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+#video-container > div {
+    margin-right: 30px; 
+}
+  
+   
+#popular h1 {
+    display: flex;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: black;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#purple-word {
+    color:rgb(181, 117, 241);
+    word-spacing: 5px;
+
+}
+
+.block_autor {
+    display: flex;
+    align-items: center; 
+}
+
+.block_autor img {
+    margin-right: 10px; 
+}
+
+.block_autor h3 {
+    color: rgb(181, 117, 241);
+    font-family: "Assistant", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating img {
+    margin-right: 10px;
+}
+
+.rating p {
+    margin-top: -5px;
+    color: rgb(181, 117, 241) !important;
+
+}
+
+.video-section p {
+    color: gray;
+    /*font-family: "Assistant", Helvetica, sans-serif;*/
+    font-style: italic;
+}
+
+.membership {
+    background-color: #071629;
+    padding-top: 50px;
+}
+
+.membership h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Assistant", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 100px;
+}
+
+.membership-container > div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.membership-container img {
+    margin: 0 auto;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.membership-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+
+} 
+
+.membership-container h2 {
+        color: white;
+}
+
+.membership .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px;
+    
+}
+
+.membership .button button {
+    border-radius: 30px;
+    background-color: rgb(160, 72, 242);
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    border-style: none;
+    margin-top: 1px;
+    margin-left: 30px;
+}
+
+.FAQ {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.FAQ h1 {
+    margin-bottom: 30px;
+}
+
+.row_block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.item_block {
+    width: 31%;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.item_block h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.item_block p {
+    color: #666;
+    font-size: 16px;
+}
